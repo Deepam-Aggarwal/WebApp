@@ -25,8 +25,6 @@ button{margin-top:40px;}
 }
 
 .page-header{
-    background-color:#00bda5;
-    padding-top:40px;
-    padding-bottom:80px;
+    background-color:#00bda5!important;
     color:#ffff;
 }
