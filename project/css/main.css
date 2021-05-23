@@ -1,14 +1,13 @@
 
 body {
   color: #343a40;
-  text-align: center;
+  text-align: center!important;
   font-size:22px;
 }
 
 h1 {
   font-family: 'Lobster', cursive;
  font-weight:700;
- margin-top:40px;
  font-size:48px;
 }
 
@@ -25,6 +24,8 @@ button{margin-top:40px;}
 }
 
 .page-header{
-    background-color:#00bda5!important;
+    background-color:#00bda5;
+    padding-top:40px;
+    padding-bottom:80px;
     color:#ffff;
 }
