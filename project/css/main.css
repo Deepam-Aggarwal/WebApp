@@ -13,8 +13,8 @@ h1 {
 
 
 #doge-image img {
-  height: 200px;
-  margin-top: 60px;
+    height: 200px !important;
+    margin-top: 60px !important;
 }
 
 .page-header{
