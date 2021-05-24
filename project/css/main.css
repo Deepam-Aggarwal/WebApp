@@ -29,3 +29,16 @@
     border: 2px solid grey;
     border-radius: 9px;
 }
+
+@media only screen and (max-width: 600px) {
+.search{
+    padding:5px;
+    font-size:10px;
+    float:left;
+}
+    .hero-button {
+        padding: 0rem 0rem!important;
+        font-size: 1.120rem!important;
+        float:right;
+    }
+}
