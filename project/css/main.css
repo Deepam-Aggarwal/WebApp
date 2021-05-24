@@ -36,3 +36,9 @@ h1 {
     width: 50%;
     text-align: right;
 }
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
