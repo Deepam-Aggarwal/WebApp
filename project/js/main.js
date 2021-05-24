@@ -3,8 +3,8 @@ $(document).ready(function(){
     getWeather();
 })
 
-function getWeather() {
-    var url = "https://api.openweathermap.org/data/2.5/weather?q=Boston&units=imperial&appid=" + apiKey;
+function getWeather(searchQuery) {
+    var url = "https://api.openweathermap.org/data/2.5/weather?q="+searchQuery+"&units=imperial&appid=" + apiKey;
     $.ajax(url, {
         success: function (data) {
             console.log(data);
@@ -14,4 +14,7 @@ function getWeather() {
     })
 }
 
-
+function searchWeather() {
+    var searchQuery  = $(".search").val();
+    getWeather(searchQuery);
+}

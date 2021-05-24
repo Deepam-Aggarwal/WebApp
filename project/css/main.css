@@ -24,7 +24,7 @@ h1 {
     background-color: #ae2d59;
     color: white !important;
     border: 1px solid #cb376a;
-    margin-top: 1rem!important;
+    margin-top: 0rem!important;
     padding: 0.9375rem 1.875rem;
     font-family: "Monserrat", sans-serif;
     font-size: 1.125rem;
@@ -36,8 +36,8 @@ h1 {
     width: 50%;
     text-align: right;
 }
-#search {
-    padding: 5px;
+.search {
+    padding: 10px;
     font-size: 17px;
     border: 2px solid grey;
     border-radius: 9px;
