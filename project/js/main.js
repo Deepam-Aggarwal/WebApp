@@ -58,7 +58,7 @@ function addMessage(namee, emaill, subjectt, messagee) {
         subjectofuser: subjectt,
         messageofuser: messagee
     }
-    var database = firebase.database().ref('posts');
+    var database = firebase.database().ref("posts");
    
     var newPostRef = database.push();
     newPostRef.set(postData, (error) => {
