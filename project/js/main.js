@@ -51,7 +51,7 @@ function handlesignin() {
 }
 
 
-function addMessgae(name1, email1, subject1, message1) {
+function addMessage(name1, email1, subject1, message1) {
     var postData = {
         Name: name1,
         Email: email1,
