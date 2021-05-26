@@ -49,3 +49,32 @@ function handlesignin() {
             // ...
         });
 }
+
+function handleMessage() {
+    var name1 = $("#form_name").val();
+    var email1 = $("#form_email").val();
+    var subject1 = $("#form_subject").val();
+    var message1 = $("#form_message").val();
+    addMessage(name1,email1,subject1,message1);
+}
+
+function addMessgae(name1, email1, subject1, message1) {
+    var postData = {
+        Name: name1,
+        Email: email1,
+        Subject: subject1,
+        Message: message1
+    }
+    var database = firebase.database().ref("posts");
+   
+    var newPostRef = database.push();
+    newPostRef.set(postData, (error) => {
+        if (error) {
+            // The write failed...
+        } else {
+            // Data saved successfully!
+            window.location.reload();
+        }
+    });
+
+}
