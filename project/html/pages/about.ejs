@@ -7,7 +7,7 @@
   <!--<div class="page-header">-->
   <% include ../helpers/navbar %>
  <!-- </div>-->
-  <section id="education">
+  <section id="education" class="contact contact-info-area section-padding  section-bg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="">
@@ -22,11 +22,72 @@
                     <div class="">
                         <div class="tcol-lg-6 animation" data-animation="fadeInLeft"
                              data-animation-delay="0.03s">
-                            <!--<p id ="demo">This is me testing out a lil html file</p>
-                            <button class="hero-button" type="button" onclick="myFunction()">Try </button>
-                         <div id="doge-image"/>-->
                          <button class="hero-button" onClick="handlesignin()" type="submit" align="center">Sign in</button>
-                         </div>
+                      </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact"  class="contact contact-info-area section-padding  section-bg">
+        <div class="container ">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="animation" data-animation="fadeInLeft"
+                         data-animation-delay="0.03s" style="vertical-align: middle;">
+                            <div class="row cAndm">
+                                <div class="col-lg-6">
+                                    <div class="home-page-form">
+                                        <div class="contact-form">
+                                            <form onSubmit="handleMessage()" action="#" >
+                                                <input type="hidden" name="_token" value="U58FZo5N9knWeZ9Bp0aIjs2rZ5NOuJ4ej3SCbpB4">
+                                                <div class="controls">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Name*"
+                                                                       required="required" data-error="Name is required.">
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Email*"
+                                                                       required="required" data-error="Valid email is required.">
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <input id="form_subject" type="text" name="subject" class="form-control"
+                                                                       placeholder="Subject*" required="required" data-error="Subject is required.">
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <textarea id="form_message" name="message" class="form-control" placeholder="Message*"
+                                                                          rows="7" required="required" data-error="Please,leave us a message."></textarea>
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <button type="submit" class="mybtn mybtn-bg"><span>Send Message</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form> <!-- End Contact From -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
                         </div>
                     </div>
                 </div>
