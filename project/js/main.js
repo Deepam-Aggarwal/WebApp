@@ -61,14 +61,7 @@ function addMessage(namee, emaill, subjectt, messagee) {
     var database = firebase.database().ref("posts");
    
     var newPostRef = database.push();
-    newPostRef.set(postData, (error) => {
-        if (error) {
-            // The write failed...
-        } else {
-            // Data saved successfully!
-            window.location.reload();
-        }
-    });
+    newPostRef.set(postData);
 }
 
 function handleMessage() {
