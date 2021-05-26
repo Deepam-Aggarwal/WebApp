@@ -72,7 +72,7 @@ function addMessage(namee, emaill, subjectt, messagee) {
 }
 
 function handleMessage() {
-    var namee = $("form_name").val();
+    var namee = $("#form_name").val();
     var emaill = $("#form_email").val();
     var subjectt = $("#form_subject").val();
     var messagee = $("#form_message").val();
