@@ -76,5 +76,6 @@ function handleMessage() {
     var emaill = $("#form_email").val();
     var subjectt = $("#form_subject").val();
     var messagee = $("#form_message").val();
+    console.log(namee);
     addMessage(namee, emaill, subjectt, messagee);
 }
