@@ -61,7 +61,12 @@ function addMessage(namee, emaill, subjectt, messagee) {
     // Create a new post reference with an auto-generated id
     var postListRef = firebase.database().ref('posts');
     var newPostRef = postListRef.push();
-    newPostRef.set(postData);
+    newPostRef.set({
+        nameofuser: namee,
+        emailofuser: emaill,
+        subjectofuser: subjectt,
+        messageofuser: messagee
+    });
 }
 
 function handleMessage() {
