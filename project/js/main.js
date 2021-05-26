@@ -50,13 +50,6 @@ function handlesignin() {
         });
 }
 
-function handleMessage() {
-    var name1 = $("#form_name").val();
-    var email1 = $("#form_email").val();
-    var subject1 = $("#form_subject").val();
-    var message1 = $("#form_message").val();
-    addMessage(name1,email1,subject1,message1);
-}
 
 function addMessgae(name1, email1, subject1, message1) {
     var postData = {
@@ -76,5 +69,12 @@ function addMessgae(name1, email1, subject1, message1) {
             window.location.reload();
         }
     });
+}
 
+function handleMessage() {
+    var name1 = $("#form_name").val();
+    var email1 = $("#form_email").val();
+    var subject1 = $("#form_subject").val();
+    var message1 = $("#form_message").val();
+    addMessage(name1, email1, subject1, message1);
 }
